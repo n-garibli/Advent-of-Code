@@ -40,6 +40,7 @@ for game in games:
                     min_cubes[c] = n_cubes
             else:
                 n_cubes = 0
+                
             if n_cubes > max_cubes[c]:
                 impossible = True
     game_power = min_cubes["r"] * min_cubes["b"] * min_cubes["g"]
