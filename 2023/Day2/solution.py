@@ -1,6 +1,6 @@
 """Advent of Code 2023 Day 2 Solution"""
-# Imports
 
+# Imports
 from typing import List, Dict
 import re
 
