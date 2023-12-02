@@ -8,9 +8,6 @@ import re
 with open("input.txt") as f:
     games: List[str] = [line.strip() for line in f.readlines()]
 
-# Part 1 & 2
-# -----------------------------------------------------------------------------
-
 # Specifying the maximum number of each colour of cubes
 # as said in the problem for part 1
 max_cubes: Dict[str, int] = {"r": 12, "g": 13, "b": 14}
