@@ -1,15 +1,12 @@
 """Advent of Code 2023 Day 2 Solution"""
-# Imports
 
+# Imports
 from typing import List, Dict
 import re
 
 # Load input
 with open("input.txt") as f:
     games: List[str] = [line.strip() for line in f.readlines()]
-
-# Part 1 & 2
-# -----------------------------------------------------------------------------
 
 # Specifying the maximum number of each colour of cubes
 # as said in the problem for part 1
