@@ -51,7 +51,7 @@ def get_signal(wire_id: str) -> int:
 
 
 # this is the part 1 solution and the wire b signal for part 2
-new_b_signal = get_signal("a")
+new_b_signal: int = get_signal("a")
 
 # resetting all the wires
 connections: Dict[str, Union[str, int]] = {target: source for (source, target) in lines}
