@@ -1,6 +1,4 @@
 """ Advent of Code 2023 Day 1 Solution """
-
-# Imports
 import re
 from typing import List, Dict
 
@@ -22,23 +20,11 @@ numbers: Dict[str, int] = {
 }
 
 
-def solve(lines, part: int) -> int:
-    '''Solves the puzzle for the part specified'''
+def solve(lines: List[str], regex: str) -> int:
+    '''Solves the puzzle using regex specified - the regex indicates
+    which patterns in each line of the input are considered digits
+    '''
     calibration_sum: int = 0
-
-    assert part in [
-        1,
-        2,
-    ], f"problem has two parts, so part must be either 1 or 2, got {part}"
-    if part == 1:
-        regex = r"\d"
-    elif part == 2:
-        # Part two also needs to look for the words for each number
-        # in the regex
-        regex = "(?=("
-        for i, j in numbers.items():
-            regex += f"{i}|{j}|"
-        regex = regex[:-1] + "))"
 
     for line in lines:
         # using regex to find all digits in each line
@@ -53,6 +39,12 @@ def solve(lines, part: int) -> int:
 
     return calibration_sum
 
+regex = r"\d"
+print(f"Part 1 Solution: {solve(lines, regex=regex)}")
 
-print(f"Part 1 Solution = {solve(lines, part=1)}")
-print(f"Part 2 Solution = {solve(lines, part=2)}")
+regex = "(?=("
+for i, j in numbers.items():
+    regex += f"{i}|{j}|"
+regex = regex[:-1] + "))"
+
+print(f"Part 2 Solution: {solve(lines, regex=regex)}")
