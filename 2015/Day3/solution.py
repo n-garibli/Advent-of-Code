@@ -1,14 +1,12 @@
-# %% --------------------------------------------------------------------------
-# {Enter description for cell}
-# -----------------------------------------------------------------------------
+"""Advent of Code 2015 Day 3 Solution"""
 from typing import Dict, List, Tuple
 
 with open("input.txt") as f:
-    instruct : str = f.read()
+    instruct: str = f.read()
 
 # Mapping of the instruction symbols to a representation of
 # the direction of motion in a 2D plane
-dirs: Dict[str, Tuple[int,int]] = {
+dirs: Dict[str, Tuple[int, int]] = {
     "^": (0, 1),
     ">": (1, 0),
     "<": (-1, 0),
@@ -21,8 +19,8 @@ def get_coors(instructions: str) -> List[Tuple[int, int]]:
     instructions provided"""
 
     coors_visited: List[Tuple[int, int]] = []
-    coor: Tuple[int,int] = (0, 0)
-    
+    coor: Tuple[int, int] = (0, 0)
+
     for i in instructions:
         if coor not in coors_visited:
             coors_visited.append(coor)
