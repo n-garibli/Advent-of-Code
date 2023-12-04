@@ -14,13 +14,7 @@ for i, bracket in enumerate(parentheses):
         floor += 1
     elif bracket == ")":
         floor -= 1
-    else:
-        raise (
-            ValueError(
-                f"Parentheses string can only contain brackets ( and ), got {bracket}"
-            )
-        )
-
+        
     if floor == -1 and basement_idx is None:
         basement_idx = i + 1
 

@@ -5,7 +5,7 @@ from collections import defaultdict
 import re
 
 with open("input.txt") as f:
-    # parsing the input line by lines
+    # parsing the input line by line
     cards: List[str] = [line.strip() for line in f.readlines()]
 
 total_points: int = 0
