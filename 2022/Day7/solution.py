@@ -1,4 +1,4 @@
-"""Advent of Code 2022 Day 6 Solution"""
+"""Advent of Code 2022 Day 7 Solution"""
 
 import re
 from typing import List, Dict
