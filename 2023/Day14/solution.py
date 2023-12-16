@@ -77,5 +77,7 @@ while True:
     else:
         cache.append(h)
 
-# The arrangement after 1000000000 cycles will be the same as after (1000000000 - start) % cycle_l + start based on the cycle length and where the cycle begins
+# The arrangement after 1000000000 cycles will be the same as after 
+# (1000000000 - start) % cycle_l + start based on the cycle length and 
+# where the cycle begins
 print(f"Part 2 Solution: {cache_vals[cache[(1000000000 - start) % cycle_l + start]]}")
