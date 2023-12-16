@@ -1,13 +1,7 @@
 """Advent of Code 2023 Day 13 Solution"""
 
-
-# %% --------------------------------------------------------------------------
-# {Enter description for cell}
-# -----------------------------------------------------------------------------
-
 from typing import List, Tuple, Optional, Union
 import numpy as np
-
 
 with open("input.txt") as f:
     ground: List[str] = f.read().split("\n\n")
