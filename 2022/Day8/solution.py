@@ -4,7 +4,7 @@ import re
 from typing import List, Tuple, Union
 import numpy as np
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     grid_rows: List[str] = f.read().splitlines()
 
 

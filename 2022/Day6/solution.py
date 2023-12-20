@@ -1,7 +1,6 @@
 """Advent of Code 2022 Day 6 Solution"""
 
-with open("input.txt") as f:
-    signal: str = f.read()
+signal: str = "mjqjpqmgbljsphdztnvjfqwrcgsmlb"
 
 
 def marker_id(signal: str, n_unique: int):

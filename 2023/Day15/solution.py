@@ -4,7 +4,7 @@ from typing import List, Dict, Optional
 from collections import defaultdict
 
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     strs: List[str] = f.read().split(",")
 
 

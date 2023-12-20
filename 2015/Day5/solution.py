@@ -3,7 +3,7 @@
 import re
 from typing import List
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     strings: List[str] = [line.strip() for line in f.readlines()]
 
 n_nice_strings: int = 0

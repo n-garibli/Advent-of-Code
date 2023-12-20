@@ -2,7 +2,7 @@
 
 import hashlib as h
 
-my_input = "bgvyzdsv"
+my_input = "abcdef"
 
 digit: int = 0
 hash_pt1: int = 0

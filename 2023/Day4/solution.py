@@ -4,7 +4,7 @@ from typing import List, Dict
 from collections import defaultdict
 import re
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     # parsing the input line by line
     cards: List[str] = [line.strip() for line in f.readlines()]
 

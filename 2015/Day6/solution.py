@@ -4,7 +4,7 @@ import re
 from typing import List, Tuple
 import numpy as np
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     instruct: List[str] = [line.strip() for line in f.readlines()]
 
 light_grid: np.ndarray = np.zeros((1000, 1000))  # whether light is on (1) or off (0)

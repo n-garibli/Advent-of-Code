@@ -2,7 +2,7 @@
 
 from typing import List, Dict
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     rounds: List[str] = f.read().splitlines()
 
 # Stores the points that a move is worth (X,Y,Z only applicable for part 1 )

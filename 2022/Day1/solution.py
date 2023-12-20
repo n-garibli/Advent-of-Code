@@ -2,7 +2,7 @@
 
 from typing import List
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     # Parsing input to extract a list of inventories (one per reindeer)
     inventories: List[List[int]] = [
         list(map(int, x.splitlines())) for x in f.read().split("\n\n")

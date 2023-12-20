@@ -4,7 +4,7 @@ import re
 from typing import List
 from copy import deepcopy
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     box_positions, instructions = f.read().split("\n\n")
 
 # This will have a list representing each stack (in order). Each stack list

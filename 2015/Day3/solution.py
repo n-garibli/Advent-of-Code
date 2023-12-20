@@ -1,7 +1,7 @@
 """Advent of Code 2015 Day 3 Solution"""
 from typing import Dict, List, Tuple
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     instruct: str = f.read()
 
 # Mapping of the instruction symbols to a representation of

@@ -12,7 +12,7 @@ paths: Dict[Tuple[str], int] = {}
 
 # Stores all locations that must be visited
 locs: List[str] = []
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     for line in f.readlines() :
         loc1, loc2, dist = line.strip().split(" ")[::2]
         locs.extend([loc for loc in [loc1, loc2] if loc not in locs])

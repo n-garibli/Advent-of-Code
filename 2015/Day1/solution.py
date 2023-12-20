@@ -2,7 +2,7 @@
 
 from typing import Optional
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     parentheses = f.read()
 
 floor: int = 0

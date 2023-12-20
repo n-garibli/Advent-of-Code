@@ -3,7 +3,7 @@
 import re
 import numpy as np  # using numpy is much faster than iterating over all possible speeds
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     times, records = [re.findall(r"\d+", line) for line in f.readlines()]
 
 

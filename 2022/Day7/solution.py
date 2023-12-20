@@ -4,7 +4,7 @@ import re
 from typing import List, Dict
 from collections import defaultdict
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     commands: List[str] = f.read().splitlines()
 
 # This will contain a list of the names of the child directories for each parent directory

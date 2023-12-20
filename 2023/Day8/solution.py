@@ -4,7 +4,7 @@ from typing import List, Tuple, Dict
 from itertools import cycle
 from math import gcd
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     instructions, mapping = f.read().split("\n\n")
     mappings: Dict[str, Tuple[str, str]] = {
         i[:3]: (i[7:10], i[12:-1]) for i in mapping.splitlines()

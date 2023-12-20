@@ -3,7 +3,7 @@
 from typing import List, Tuple, Dict
 import numpy as np
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     pipes: List[str] = f.read().splitlines()
 
 dim_r: int = len(pipes)

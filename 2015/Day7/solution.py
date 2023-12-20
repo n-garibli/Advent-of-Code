@@ -2,7 +2,7 @@
 
 from typing import Dict, Union
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     lines = [line.strip().split(" -> ") for line in f.readlines()]
 
 # Dictionary which stores the wiring instructions for each wire

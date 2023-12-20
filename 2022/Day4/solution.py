@@ -2,7 +2,7 @@
 
 from typing import List
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     ranges: List[str] = [pair.split(",") for pair in f.read().splitlines()]
 
 full_overlap: int = 0

@@ -4,7 +4,7 @@ import re
 from typing import List, Union
 import numpy as np
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     histories: List[List[int]] = [
         list(map(int, re.findall(r"-?\d+", h))) for h in f.read().splitlines()
     ]

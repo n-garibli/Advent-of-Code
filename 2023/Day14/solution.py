@@ -4,7 +4,7 @@ from typing import List
 import copy
 import numpy as np
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     rocks: List[str] = f.read().splitlines()
 
 # populating a numpy array that will contain all the rocks

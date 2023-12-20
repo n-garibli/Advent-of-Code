@@ -3,7 +3,7 @@
 from typing import List, Tuple
 import numpy as np
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     sky: List[str] = f.read().splitlines()
 
 # These will store the ids of all rows and columns that expanded

@@ -3,7 +3,7 @@
 from collections import Counter
 from typing import List
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     hands: List[str] = f.read().splitlines()
 
 

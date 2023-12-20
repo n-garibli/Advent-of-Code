@@ -3,7 +3,7 @@
 from string import ascii_lowercase as lc, ascii_uppercase as uc
 from typing import List
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     items: List[str] = f.read().splitlines()
 
 

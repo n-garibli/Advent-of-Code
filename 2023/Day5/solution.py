@@ -13,7 +13,7 @@ src_ranges: Dict[int, List[Tuple[int, int]]] = defaultdict(lambda: [])
 # Stores the destination for the start of each source range for each var_id
 dsts: Dict[int, List] = defaultdict(lambda: [])
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     # extract all seeds as integers
     seeds = list(map(int, re.findall(r"\d+", f.readlines(1)[0])))
 

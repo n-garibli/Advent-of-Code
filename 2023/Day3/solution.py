@@ -5,7 +5,7 @@ import re
 from typing import List, Tuple
 
 # Load input line by line
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     lines: List[str] = [line.strip() for line in f.readlines()]
 
 symbol_coors: List[Tuple[int, int, bool]] = []

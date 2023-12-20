@@ -5,7 +5,7 @@ from typing import List, Dict
 import re
 
 # Load input
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     games: List[str] = [line.strip() for line in f.readlines()]
 
 # Specifying the maximum number of each colour of cubes

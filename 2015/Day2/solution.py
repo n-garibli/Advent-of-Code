@@ -2,7 +2,7 @@
 
 from typing import List
 
-with open("input.txt") as f:
+with open("input_test.txt") as f:
     # load and parse the input
     present_dims: List[List[str]] = [line.strip().split("x") for line in f.readlines()]
 
