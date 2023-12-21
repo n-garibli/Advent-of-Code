@@ -1,4 +1,5 @@
-"""Advent of Code 2023 Day 6 Solution"""
+"""Advent of Code 2023 Day 6 Solution
+Completion date: 06/12/2023"""
 
 import re
 import numpy as np  # using numpy is much faster than iterating over all possible speeds

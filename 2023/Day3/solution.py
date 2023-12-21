@@ -1,4 +1,5 @@
-"""Advent of Code 2023 Day 3 Solution"""
+"""Advent of Code 2023 Day 3 Solution
+Completion date: 03/12/2023"""
 
 # Imports
 import re

@@ -1,4 +1,6 @@
-""" Advent of Code 2023 Day 1 Solution """
+""" Advent of Code 2023 Day 1 Solution 
+Completion date: 01/12/2023"""
+
 import re
 from typing import List, Dict
 

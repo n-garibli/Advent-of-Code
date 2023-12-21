@@ -1,5 +1,6 @@
 """Advent of Code 2023 Day 5 Solution
-Not brute force - runs quite fast!"""
+Not brute force - runs quite fast!
+Completion date: 05/12/2023"""
 
 import re
 from typing import List, Tuple, Dict, Optional

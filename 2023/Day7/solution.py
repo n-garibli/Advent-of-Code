@@ -1,4 +1,5 @@
-"""Advent of Code 2023 Day 7 Solution"""
+"""Advent of Code 2023 Day 7 Solution
+Completion date: 07/12/2023"""
 
 from collections import Counter
 from typing import List
