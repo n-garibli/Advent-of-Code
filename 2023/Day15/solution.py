@@ -1,4 +1,5 @@
-"""Advent of Code 2023 Day 15 Solution"""
+"""Advent of Code 2023 Day 15 Solution
+Completion date: 15/12/2023"""
 
 from typing import List, Dict, Optional
 from collections import defaultdict

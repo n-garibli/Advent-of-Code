@@ -1,4 +1,5 @@
-"""Advent of Code 2023 Day 18 Solution"""
+"""Advent of Code 2023 Day 18 Solution
+Completion date: 21/12/2023"""
 
 from typing import List, Dict, Tuple
 

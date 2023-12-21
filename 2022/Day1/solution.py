@@ -1,4 +1,5 @@
-"""Advent of Code 2022 Day 1 Solution"""
+"""Advent of Code 2022 Day 1 Solution
+Completed in 2022, rewritten on 6/12/2023"""
 
 from typing import List
 
