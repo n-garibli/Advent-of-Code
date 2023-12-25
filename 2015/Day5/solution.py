@@ -1,4 +1,5 @@
-"""Advent of Code 2015 Day 5 Solution"""
+"""Advent of Code 2015 Day 5 Solution
+Completion Date: 04/12/2023"""
 
 import re
 from typing import List
@@ -10,7 +11,7 @@ n_nice_strings: int = 0
 for s in strings:
     if len(re.findall(r"[aeiou]", s)) < 3:
         continue  # ensures at least 3 vowels
-    if any([x in s for x in ["ab", "cd", "pq", "xy"]]):
+    if any(x in s for x in ["ab", "cd", "pq", "xy"]):
         continue  # ensures no forbidden substrings
     # check that a letter repeats
     for letter in s:
