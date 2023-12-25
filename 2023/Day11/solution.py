@@ -67,7 +67,7 @@ def find_total_distance(coors: List[Tuple[int, int]], expansion: int) -> int:
     input list"""
     tot_distance = 0
     for i, coor1 in enumerate(coors):
-        for j, coor2 in enumerate(coors[i + 1 :]):
+        for coor2 in coors[i + 1 :]:
             tot_distance += distance(coor1, coor2, expansion=expansion)
     return tot_distance
 
