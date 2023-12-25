@@ -1,4 +1,6 @@
-"""Advent of Code 2015 Day 3 Solution"""
+"""Advent of Code 2015 Day 3 Solution
+Completion Date: 04/12/2023"""
+
 from typing import Dict, List, Tuple
 
 with open("input_test.txt") as f:
@@ -15,7 +17,7 @@ dirs: Dict[str, Tuple[int, int]] = {
 
 
 def get_coors(instructions: str) -> List[Tuple[int, int]]:
-    """This function will return all coordinates visited from a set of
+    """This function returns all coordinates visited from a set of
     instructions provided"""
 
     coors_visited: List[Tuple[int, int]] = []
