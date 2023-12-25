@@ -48,5 +48,5 @@ def get_full_dir_size(directory: str):
 total_dir_sizes = [get_full_dir_size(directory) for directory in dir_sizes.keys()]
 outer = get_full_dir_size("/")
 
-print(f"Part 1 Solution: {sum([i for i in total_dir_sizes if i < 100000])}")
-print(f"Part 2 Solution: {min([i for i in total_dir_sizes if (40000000 - outer + i) > 0])}")
+print(f"Part 1 Solution: {sum(i for i in total_dir_sizes if i < 100000)}")
+print(f"Part 2 Solution: {min(i for i in total_dir_sizes if (40000000 - outer + i) > 0)}")
