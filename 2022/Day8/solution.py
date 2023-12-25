@@ -50,7 +50,7 @@ for i in range(1, dim - 1):  # no need to consider trees on the edges
     for j in range(1, dim - 1):
         score, visible = analyse_view_4d(i, j)
         interior_visible += visible
-        max_score = score if score > max_score else max_score
+        max_score = max([score,max_score])
 
 print(f"Part 1 Solution: {interior_visible + 4 * dim - 4}")
 print(f"Part 2 Solution: {max_score}")
