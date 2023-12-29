@@ -1,5 +1,5 @@
 """Advent of Code 2015 Day 10 Solution
-Completed in 2022 (see old_solution.py), rewritten on 29/12/2023 
+Completed in Jan 2023 (see old_solution.py), rewritten on 29/12/2023 
 to use regex for a shorter solution"""
 
 import re

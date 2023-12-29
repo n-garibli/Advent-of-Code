@@ -1,5 +1,5 @@
 """Advent of Code 2015 Day 10 Solution
-Written in 2022 (with a minor 2023 reformat to print solutions more neatly).
+Written in Jan 2023 (with a minor Dec 2023 reformat to print solutions more neatly).
 Doesn't use regex unlike the new solution so perhaps is easier to understand."""
 
 def elf_talk(inp) :
