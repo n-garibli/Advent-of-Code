@@ -122,6 +122,4 @@ def find_min_winning_mana(
 
 
 print(f"Part 1 Solution: {find_min_winning_mana(Player(), Boss(), float('inf'))}")
-print(
-    f"Part 2 Solution: {find_min_winning_mana(Player(), Boss(), float('inf'), hard_mode=True)}"
-)
+print(f"Part 2 Solution: {find_min_winning_mana(Player(), Boss(), float('inf'), hard_mode=True)}")
