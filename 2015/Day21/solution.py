@@ -6,7 +6,8 @@ is fast."""
 from typing import Dict, List
 from math import ceil
 
-# Summary of the shop itinerary
+# Summary of the shop itinerary. "c" stands for cost,
+# "d" stands for damage and "a" stands for armor
 weapons: List[Dict[str, int]] = [
     {"c": 8, "d": 4},
     {"c": 10, "d": 5},
@@ -15,7 +16,7 @@ weapons: List[Dict[str, int]] = [
     {"c": 74, "d": 8},
 ]
 armors: List[Dict[str, int]] = [
-    {"c": 0, "a": 0},  # no armor
+    {"c": 0, "a": 0},  # equivalent to no armor
     {"c": 13, "a": 1},
     {"c": 31, "a": 2},
     {"c": 53, "a": 3},
@@ -24,7 +25,7 @@ armors: List[Dict[str, int]] = [
 ]
 
 rings: List[Dict[str, int]] = [
-    {"c": 0, "d": 0, "a": 0},  # no ring
+    {"c": 0, "d": 0, "a": 0},  # equivalent no ring
     {"c": 25, "d": 1, "a": 0},
     {"c": 50, "d": 2, "a": 0},
     {"c": 100, "d": 3, "a": 0},
@@ -39,7 +40,7 @@ BOSS_STATS: Dict[str, int] = {"hits": 104, "d": 8, "a": 1}
 
 def play_game(stats: Dict[str, int]) -> bool:
     """Returns True if I win and returns False if the boss wins. Makes
-    use of the arithmetic series formula for quick solution"""
+    use of arithmetic sequences for quick solution."""
     d = max(1, stats["d"] - BOSS_STATS["a"])  # my damage per round
     d_boss = max(1, BOSS_STATS["d"] - stats["a"])  # boss' damage per round
     n_rounds_to_kill_me = ceil(stats["hits"] / d_boss)
@@ -50,6 +51,7 @@ def play_game(stats: Dict[str, int]) -> bool:
 
 min_winning_cost = float("inf")
 max_losing_cost = 0
+# trying every combination of weapons, armor and rings
 for weapon in weapons:
     for armor in armors:
         for i, ring1 in enumerate(rings):  # ring 1
